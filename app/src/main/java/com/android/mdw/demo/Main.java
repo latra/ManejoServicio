@@ -3,24 +3,29 @@ package com.android.mdw.demo;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class Main extends Activity {
-  private Intent in;
+  private Intent soundService;
+  private Intent musicService;
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.main);
 
-    Button btnInicio = (Button) findViewById(R.id.btnInicio);
-    Button btnFin = (Button) findViewById(R.id.btnFin);
+    Button btnSound =  findViewById(R.id.btnSound);
+    Button btnMusic =  findViewById(R.id.btnMusic);
+    Button btnStop =
+            findViewById(R.id.btnStop);
 
-    btnInicio.setOnClickListener((listener) -> startService(in));
-    btnFin.setOnClickListener((listener) -> stopService(in));
-
-    in = new Intent(this, ElServicio.class);
+    btnSound.setOnClickListener((listener) -> startService(soundService));
+    btnMusic.setOnClickListener((listener) -> startService(musicService));
+    btnStop.setOnClickListener((listener) -> {
+      stopService(soundService);
+      stopService(musicService);
+    });
+    soundService = new Intent(this, SoundService.class);
+    musicService = new Intent(this, MusicService.class);
   }
 }

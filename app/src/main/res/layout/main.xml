@@ -3,28 +3,42 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-	<TextView  
+	<TextView
 	    android:layout_width="match_parent" 
 	    android:layout_height="wrap_content" 
 	    android:text="Utilización de Servicios" 
 	    android:gravity="center" 
 	    android:textSize="20sp" 
 	    android:padding="20dp"/>
-	<LinearLayout  
-		android:layout_width="match_parent" 
+
+	<LinearLayout
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:gravity="center">
-		<Button 
-			android:text="Inicio" 
-			android:id="@+id/btnInicio" 
-			android:layout_width="wrap_content" 
-			android:layout_height="wrap_content">
-		</Button>
-		<Button 
-			android:layout_width="wrap_content" 
+
+		<Button
+			android:id="@+id/btnSound"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="Detener" 
-			android:id="@+id/btnFin">
-		</Button>		
+			android:text="@string/buttonTrain"></Button>
+
+		<Button
+			android:id="@+id/btnMusic"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/buttonMusic"></Button>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/btnStop"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/buttonStop"></Button>
 	</LinearLayout>
 </LinearLayout>
