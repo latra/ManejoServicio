@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class Main extends Activity implements OnClickListener {
+public class Main extends Activity {
   private Intent in;
 
   @Override
@@ -18,21 +18,9 @@ public class Main extends Activity implements OnClickListener {
     Button btnInicio = (Button) findViewById(R.id.btnInicio);
     Button btnFin = (Button) findViewById(R.id.btnFin);
 
-    btnInicio.setOnClickListener(this);
-    btnFin.setOnClickListener(this);
+    btnInicio.setOnClickListener((listener) -> startService(in));
+    btnFin.setOnClickListener((listener) -> stopService(in));
 
     in = new Intent(this, ElServicio.class);
-  }
-
-  @Override
-  public void onClick(View src) {
-    switch (src.getId()) {
-    case R.id.btnInicio:      
-      startService(in);
-      break;
-    case R.id.btnFin:
-      stopService(in);
-      break;
-    }
   }
 }
