@@ -31,7 +31,7 @@ public class MusicService extends Service {
 	
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startid) {
-		Toast.makeText(this, R.string.iniserv, Toast.LENGTH_LONG).show();
+		Toast.makeText(this, R.string.initsoundmusic, Toast.LENGTH_LONG).show();
 		player.start();
 		return startid;		
 	}
