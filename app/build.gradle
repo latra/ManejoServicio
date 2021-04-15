@@ -20,4 +20,5 @@ android {
         implementation 'com.android.support.constraint:constraint-layout:2.0.4'
 
     }
+    buildToolsVersion '30.0.3'
 }
