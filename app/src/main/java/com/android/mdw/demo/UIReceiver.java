@@ -4,12 +4,13 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-public class UIReciever extends BroadcastReceiver {
+public class UIReceiver extends BroadcastReceiver {
     private Intent in;
+    public  UIReceiver(Intent in){
+        this.in = in;
+    }
     @Override
     public void onReceive(Context context, Intent intent) {
-        if (in == null)
-            in = new Intent(context, MediaManagerService.class);
         if (intent.getAction().equals("MEDIA_STOP"))
             context.stopService(in);
         else {

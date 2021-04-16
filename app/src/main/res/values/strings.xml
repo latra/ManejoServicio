@@ -9,4 +9,6 @@
     <string name="buttonTrain">Reproducir sonido</string>
     <string name="buttonMusic">Reproducir musica</string>
     <string name="buttonStop">Detener música</string>
+    <string name="headsetout">Intent recibido ElReceptor - EVENTO DEL SISTEMA OFF</string>
+    <string name="headsetin">Intent recibido ElReceptor - EVENTO DEL SISTEMA ON</string>
 </resources>
