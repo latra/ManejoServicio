@@ -2,8 +2,8 @@
 <resources>
     <string name="hello">Hello World, Main!</string>
     <string name="app_name">ManejoServicios</string>
-    <string name="initsoundserv">Servicio sonido activado</string>
-    <string name="initsoundmusic">Servicio música activado</string>
+    <string name="initsoundsrv">Servicio Sonido Iniciado</string>
+    <string name="initmusicsrv">Servicio Música Iniciado</string>
     <string name="creaserv">Servicio Creado</string>
     <string name="finaserv">Servicio Finalizado</string>
     <string name="buttonTrain">Reproducir sonido</string>

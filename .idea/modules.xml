@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MiniAct4.iml" filepath="$PROJECT_DIR$/.idea/modules/MiniAct4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MiniAct4.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MiniAct4.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ManejoServicioLatra.iml" filepath="$PROJECT_DIR$/.idea/modules/ManejoServicioLatra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ManejoServicioLatra.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ManejoServicioLatra.app.iml" />
     </modules>
   </component>
 </project>

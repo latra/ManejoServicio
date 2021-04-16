@@ -17,13 +17,13 @@
 		android:gravity="center">
 
 		<Button
-			android:id="@+id/btnSound"
+			android:id="@+id/btnIniSound"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="@string/buttonTrain"></Button>
 
 		<Button
-			android:id="@+id/btnMusic"
+			android:id="@+id/btnIniMusic"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="@string/buttonMusic"></Button>
