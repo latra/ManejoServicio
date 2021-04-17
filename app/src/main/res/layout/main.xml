@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
 	<TextView
 	    android:layout_width="match_parent" 
 	    android:layout_height="wrap_content" 
@@ -40,5 +41,23 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="@string/buttonStop"></Button>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+
+		<Button
+			android:id="@+id/btnSelect"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Seleccionar Audio" />
+
+		<Button
+			android:id="@+id/btnPlaySelected"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Reproducir " />
 	</LinearLayout>
 </LinearLayout>
